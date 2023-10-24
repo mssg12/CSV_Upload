@@ -1,0 +1,37 @@
+.nav-bar {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(24, 13, 13);
+    color: aliceblue;
+}
+
+.nav-bar .back-icon {
+    font-size: 25px;
+}
+
+.nav-bar .title {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.nav-bar .sub-title {
+    margin-left: 10px;
+    font-size: 15px;
+    position: relative;
+}
+
+.nav-bar .file-name {
+    text-align: right;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.container .center-text {
+    text-align: center;
+}
+
+.container .center-text p{
+    color: gray;
+}
