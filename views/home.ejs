@@ -1,0 +1,52 @@
+<link rel="stylesheet" type="text/css" href="../css/home.css">
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+
+<div class="nav-bar">
+    <a href="" class="back-icon" style="visibility: hidden;">
+        <i class="fa-solid fs-circle-arrow-left" style="color: aliceblue;"></i>
+    </a>
+    <div class="title">
+        CSV Upload <i class="fa-sharp fa-regular fa-file"></i>
+    </div>
+</div>
+
+<div class="container">
+    <div class="center-text">
+        <h1>Upload a File Here</h1>
+        <p>Reads CSV file and Display its content in tabular form</p>
+    </div>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <div class="input-container">
+            <input type="file" name="file" id="csvFile" accept=".csv">
+            <button class="upload-btn">Upload</button>
+        </div>
+    </form>
+</div>
+
+<div class="files-list">
+    <div class="list-center-text">
+        <h2>Uploaded Files</h2>
+    </div>
+    <% if(files.length ==0) { %>
+        <div class="no-file">No Files to Show !</div>
+        <%} else{ %>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>View</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for (let file of files){ %>
+                        <tr>
+                            <td><%=file.fileName %></td>
+                            <td><a href="/view/<%= file.file %>" class="view-link"><i class="fa-solid fa-eye"></i></a></td>
+                            <td><a href="/delete/<%= file.file %>" class="delete-link"><i class="fa-regular fa-trash-can"></i></a></td>
+                        </tr>
+                        <%} %>
+                </tbody>
+            </table>
+            <%} %>
+</div>
