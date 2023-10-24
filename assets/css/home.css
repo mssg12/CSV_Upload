@@ -1,0 +1,52 @@
+.container form{
+    margin: 0% 25% 0% 25%;
+    background-color: rgb(219, 224, 228);
+    padding: 5% 0% 5% 0%;
+    text-align: center;
+    border: 1px;
+    border-style: dotted;
+}
+
+.container .input-container .upload-btn {
+    background-color: rgb(79, 135, 209);
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    
+}
+
+.files-list .list-center-text {
+    background-color: rgb(139, 144, 148);
+    text-align: center;
+}
+
+.files-list .no-file{
+    text-align: center;
+    background-color: rgb(241, 73, 73);
+}
+
+.files-list table{
+    margin: 0% 25% 0% 25%;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(160, 185, 182);
+    border: 1px solid;
+}
+
+.files-list table td{
+    border: 1px solid;
+}
+
+.files-list table thead{
+    background-color: rgb(59, 43, 46);
+    color: white;
+}
+
+.upload-btn:hover {
+    transform: translateY(-1.5px);
+    box-shadow: 0px 2px 2px 1px rgba(75, 136, 253, 0.4);
+    cursor: pointer;
+}
+
+.delete-link{
+    color: red;
+}

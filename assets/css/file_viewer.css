@@ -1,0 +1,59 @@
+
+.file-name{
+    text-align: center;
+    background-color: aquamarine;
+    height: 20px;
+}
+
+.serch-bar form{
+    background-color: rgb(219, 224, 228);
+    padding: 1% 0% 1% 0%;
+    text-align: center;
+    border: 1px;
+    border-style: dotted;
+}
+
+.serch-bar .search-box .search-btn {
+    background-color: rgb(79, 135, 209);
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    
+}
+
+
+#total-rows{
+    font-size: large;
+    color: brown;
+}
+
+.result-area table{
+    /* margin: 0% 25% 0% 25%; */
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(160, 185, 182);
+    border: 1px solid;
+}
+
+.result-area table td{
+    border: 1px solid;
+}
+
+.result-area table thead{
+    background-color: rgb(59, 43, 46);
+    color: white;
+}
+
+.highlight {
+    background-color: rgba(226, 108, 10, 0.2);
+  }
+
+#go {
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #4b88fd;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
