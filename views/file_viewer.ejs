@@ -1,0 +1,51 @@
+<link rel="stylesheet" type="text/css" href="../css/file_viewer.css">
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+
+<div class="nav-bar" style="position: relative;">
+    <a href="/" class="back-icon">
+        <i class="fa-solid fa-circle-arrow-left" style="color: antiquewhite;"></i>
+    </a>
+    <div class="title">
+        CSV Upload
+    </div>
+    <div class="sub-title">
+        Viewer
+    </div>
+</div>
+
+<div class="file-name">
+    <%= fileName %>
+</div>
+
+<div class="serch-bar">
+    <form id="searchForm">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search data...">
+            <button id="go" class="search-btn" type="button">Go</button>
+        </div>
+    </form>
+    <div>
+        <p id="total-rows">Total Rows : <%= length %></p>
+    </div>
+</div>
+
+<div class="result-area">
+    <table>
+        <thead>
+            <tr>
+                <% for(let h of head) {%> 
+                    <th><%= h %></th>    
+                <%} %>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let row of data) { %>
+                <tr>
+                    <% for(let key of Object.keys(row)) { %>
+                        <td><%= row[key] %></td>
+                    <%} %>
+                </tr>
+            <%} %>
+        </tbody>
+    </table>
+</div>
